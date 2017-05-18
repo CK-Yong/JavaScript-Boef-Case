@@ -1,0 +1,22 @@
+{
+  "name": "javascript-boef-opdracht",
+  "version": "1.0.0",
+  "description": "Deze repository bevat de source voor de JavaScript BOEF case.",
+  "main": "boef-spec.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.sogyo.nl:ckyoung/javascript-boef-opdracht.git"
+  },
+  "author": "Chee Kent Yong",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine-core": "^2.6.2",
+    "karma": "^1.7.0",
+    "karma-chrome-launcher": "^2.1.1",
+    "karma-cli": "^1.0.1",
+    "karma-jasmine": "^1.1.0"
+  }
+}
