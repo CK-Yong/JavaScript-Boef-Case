@@ -75,3 +75,5 @@ Boef = (function () {
         }
     };
 })();
+
+module.exports = Boef;
