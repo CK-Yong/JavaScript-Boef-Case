@@ -46,5 +46,3 @@ function getLocationOfSensorRow() {
     }
     console.log(locations);
 }
-
-google.maps.event.addDomListener(window, 'load', initialize);
