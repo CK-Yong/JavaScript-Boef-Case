@@ -17,25 +17,20 @@ function initMap() {
     var marker = new google.maps.Marker({
         position: locations[0],
         map: map,
-        title: 'Hello World!'
+        label: "E"
     });
 
     var infowindow = new google.maps.InfoWindow();
 
     var marker, i;
 
-    for (i = 0; i < locations.length; i++) {
+    for (i = 1; i < locations.length; i++) {
         marker = new google.maps.Marker({
             position: locations[i],
-            map: map
+            map: map,
+            label: "S"+i
         });
 
-        google.maps.event.addListener(marker, 'click', (function (marker, i) {
-            return function () {
-                infowindow.setContent(locations[i]);
-                infowindow.open(map, marker);
-            }
-        })(marker, i));
     }
 }
 
@@ -52,3 +47,4 @@ function getLocationOfSensorRow() {
     console.log(locations);
 }
 
+google.maps.event.addDomListener(window, 'load', initialize);
